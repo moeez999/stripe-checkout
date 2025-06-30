@@ -13,7 +13,7 @@ app.use(express.json());
 app.post("/create-checkout-session", async (req, res) => {
   const { amount } = req.body;
 
-  if (!amount || typeof amount !== "number" || amount < 50) {
+  if (!amount || typeof amount !== "number") {
     return res.status(400).json({ error: "Invalid amount" });
   }
 

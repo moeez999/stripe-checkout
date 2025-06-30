@@ -34,8 +34,8 @@ app.post("/create-checkout-session", async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: "https://yourdomain.com/success",
-      cancel_url: "https://yourdomain.com/cancel",
+      success_url: "https://dcnativetour.com/",
+      cancel_url: "https://dcnativetour.com/",
     });
 
     res.json({ id: session.id });

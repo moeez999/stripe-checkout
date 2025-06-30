@@ -38,7 +38,7 @@ app.post("/create-checkout-session", async (req, res) => {
       cancel_url: "https://dcnativetour.com/",
     });
 
-    res.json({ id: session.id });
+    res.json({ url: session.url });
   } catch (error) {
     console.error("Stripe error:", error);
     res.status(500).json({ error: "Failed to create session" });

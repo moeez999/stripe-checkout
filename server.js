@@ -24,7 +24,7 @@ app.post("/create-checkout-session", async (req, res) => {
       line_items: [
         {
           price_data: {
-            currency: "gbp",
+            currency: "usd",
             unit_amount: amount, // Amount in pence
             product_data: {
               name: "Custom Order",
